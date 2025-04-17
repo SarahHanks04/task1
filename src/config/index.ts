@@ -1,0 +1,1 @@
+export const SUPPORT_PHONE = '+92 666 888 0000';
