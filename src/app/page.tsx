@@ -1,3 +1,4 @@
+import BusinessStats from "@/components/businessStats";
 import FAQSection from "@/components/faq/faqSection";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
@@ -18,6 +19,7 @@ export default function Home() {
       <Mission />
       <FAQSection />
       <Testimonials />
+      <BusinessStats />
     </div>
   );
 }
