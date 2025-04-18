@@ -3,14 +3,15 @@
 import { experienceCards } from "@/data/experienceCard";
 import ExperienceCard from "./experienceCard";
 import { ExperienceCard as ExperienceCardType } from "@/types/experience-card";
-
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Experience() {
   return (
     <section className="bg-[#0F0D1D] text-white py-[6rem]">
       <div className="container mx-auto px-10">
         {/* Section Header */}
-        <div className="text-center">
+        <div className="text-center py-0 md:py-[3rem]">
           <h2 className="text-4xl font-bold uppercase">
             Real-World Experience
           </h2>
@@ -32,12 +33,30 @@ export default function Experience() {
         </div>
 
         {/* Partners Carousel */}
-        <div className="mt-12 pt-8">
+        <div className="mt-12 py-10">
           <div className="relative flex items-center justify-center px-3">
             <div className="inset-x-0 h-px bg-gray-700 w-full z-10"></div>
             <h3 className="absolute text-center text-sm uppercase leading-1.25 bg-[#0F0D1D] px-4 z-10">
               Meet the Partners
             </h3>
+          </div>
+          <div className="flex items-center justify-between mt-10">
+            <div className="p-[6px] bg-[#3c96fc18]">
+              <Image
+                src="/assets/icons/arrowLeft.svg"
+                alt="Bucket Icon"
+                width={14}
+                height={14}
+              />
+            </div>
+            <div className="p-[6px] bg-[#3c96fc18]">
+              <Image
+                src="/assets/icons/arrowRight.svg"
+                alt="Bucket Icon"
+                width={14}
+                height={14}
+              />
+            </div>
           </div>
         </div>
       </div>

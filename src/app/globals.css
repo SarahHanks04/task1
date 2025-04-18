@@ -16,6 +16,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font-jost: "Jost", sans-serif;
   }
 }
 
@@ -28,5 +29,30 @@ body {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-jost), Arial, Helvetica, sans-serif;
+}
+
+
+.faq-item {
+  background-color: #f2f4f8;
+}
+
+.faq-item button {
+  transition: background-color 0.3s ease;
+}
+
+.faq-item button:hover {
+  background-color: #ffffff;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-answer.open {
+  max-height: 200px; 
+  opacity: 1;
 }

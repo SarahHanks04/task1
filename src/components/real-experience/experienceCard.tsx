@@ -7,16 +7,11 @@ interface ExperienceCardProps {
   className?: string;
 }
 
-export default function ExperienceCard({
-  title,
-  link,
-}: ExperienceCardProps) {
+export default function ExperienceCard({ title, link }: ExperienceCardProps) {
   const [firstWord, secondWord] = title.split(" ");
 
   return (
-    <div
-      className="bg-black text-white p-[3rem] rounded-lg flex justify-between items-center"
-    >
+    <div className="bg-black text-white p-[3rem] rounded-lg flex justify-between items-center">
       {/* Text Content */}
       <div className="flex flex-col uppercase">
         <h3 className="text-[20px] font-semibold leading-[30px]">
