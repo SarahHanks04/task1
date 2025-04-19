@@ -37,15 +37,15 @@ export default function NavItem({
         onClick={() => isMobile && setDropdownOpen(!dropdownOpen)}
         onMouseEnter={() => !isMobile && setDropdownOpen(true)}
         onMouseLeave={() => !isMobile && setDropdownOpen(false)}
-        className={`flex items-center uppercase ${isMobile ? "w-full text-left" : ""} ${
-          pathname === link.href ? "text-blue-600" : "text-white"
-        }`}
+        className={`flex items-center uppercase ${
+          isMobile ? "w-full text-left" : ""
+        } ${pathname === link.href ? "text-blue-600" : "text-white"}`}
       >
         {link.name}
         {dropdownOpen ? (
-          <ChevronUp className="ml-2 h-4 w-4 text-blue" />
+          <ChevronUp className="ml-2 h-4 w-4 text-blue-600" />
         ) : (
-          <ChevronDown className="ml-2 h-4 w-4 text-blue" />
+          <ChevronDown className="ml-2 h-4 w-4 text-blue-600" />
         )}
       </button>
       {dropdownOpen && (

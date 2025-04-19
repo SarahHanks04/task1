@@ -18,12 +18,13 @@ export default function Header() {
 
   return (
     <header className="header fixed w-full z-50 bg-[#707070] border-b border-gray-400 shadow-md">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center">
+      {/* Main Header Content */}
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center relative">
         {/* Logo */}
         <div className="relative text-white overflow-hidden">
           <h1>CreativeLogo</h1>
         </div>
-        <span className="h-12 w-px bg-gray-300" />
+        <span className="h-12 w-px bg-gray-300 mx-4" />
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center uppercase space-x-4">
@@ -50,7 +51,7 @@ export default function Header() {
 
           <span className="h-12 w-px bg-gray-300 mx-2" />
           <div className="text-white font-medium text-[16px]">
-            <p className="text-white font-medium text-[16px]">Need help? </p>
+            <p className="text-white font-medium text-[16px]">Need help?</p>
             <a
               href={`tel:${SUPPORT_PHONE}`}
               className="hover:underline text-sm"
@@ -74,6 +75,9 @@ export default function Header() {
         </button>
       </div>
 
+      {/* Horizontal Divider */}
+      <hr className="border-t border-gray-300 w-full" />
+
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
         <nav className="mobile-menu md:hidden bg-[#707070] text-white p-4">
@@ -90,8 +94,8 @@ export default function Header() {
             ))}
             <div className="pt-4 space-y-2 text-center">
               <SocialLinks className="justify-center" />
-              <hr />
-              {/* Add Static Search Icon for Mobile */}
+              <hr className="border-t border-gray-300" />
+              {/* Static Search Icon for Mobile */}
               <div className="flex justify-center">
                 <Search className="h-5 w-5 text-white hover:text-[#3C72FC]" />
               </div>
