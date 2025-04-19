@@ -10,7 +10,7 @@ import { testimonialData } from "@/data/testimonialData";
 import { Testimonial } from "@/types/testimonial";
 import TestimonialCard from "./testimonialCard";
 
-// Arrow
+// Navigation
 const PrevArrow = ({ onClick }: ArrowProps) => (
   <button
     onClick={onClick}

@@ -3,7 +3,6 @@
 import { experienceCards } from "@/data/experienceCard";
 import ExperienceCard from "./experienceCard";
 import { ExperienceCard as ExperienceCardType } from "@/types/experience-card";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Experience() {

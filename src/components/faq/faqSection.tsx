@@ -21,7 +21,6 @@ export default function FAQSection() {
           </p>
         </div>
 
-        {/* Main Accordion */}
         <div className="flex flex-col md:flex-row gap-2">
           {/* Accordion */}
           <div className="md:w-3/5">

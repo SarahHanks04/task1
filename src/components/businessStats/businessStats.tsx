@@ -22,7 +22,7 @@ export default function BusinessStats() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center py-10">
           {statsData.map((stat: Stat) => (
             <div key={stat.id} className="flex flex-col items-center">
-              {/* Icon Wrapper */}
+              {/* Icon */}
               <div className="bg-[#06050C] p-3 flex justify-center items-center">
                 <Image
                   src={stat.iconSrc}

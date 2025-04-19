@@ -10,10 +10,6 @@ export const navLinks: NavLink[] = [
   { name: "Content", href: "/content" },
 ];
 
-export const serviceDropdownItems: DropdownItem[] = [
-  // { name: "Leadership", href: "/services/leadership" },
-  // { name: "Good collaboration", href: "/services/good-collaboration" },
-  // { name: "Free Communication", href: "/services/free-communication" },
-];
+export const serviceDropdownItems: DropdownItem[] = [];
 
 export const socialLinks = footerData.socialLinks;

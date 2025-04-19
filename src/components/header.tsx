@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { Menu, X, Search } from "lucide-react";
 import { navLinks, serviceDropdownItems } from "@/data/navLinks";
 import NavItem from "./ui/navItem";
@@ -12,29 +10,11 @@ import { SUPPORT_PHONE } from "@/config";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-  const [searchOpen, setSearchOpen] = useState<boolean>(false);
-  const [searchQuery, setSearchQuery] = useState<string>("");
   const pathname = usePathname();
-  const router = useRouter();
-
-  const searchablePages = [...navLinks, ...serviceDropdownItems];
 
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [pathname]);
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    const matchedPage = searchablePages.find((page) =>
-      page.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-
-    if (matchedPage) {
-      router.push(matchedPage.href);
-      setSearchQuery("");
-      setSearchOpen(false);
-    }
-  };
 
   return (
     <header className="header fixed w-full z-50 bg-[#707070] border-b border-gray-400 shadow-md">
@@ -63,36 +43,9 @@ export default function Header() {
           <SocialLinks />
           <span className="h-12 w-px bg-gray-300 mx-4" />
 
-          {/* Search Icon with Dropdown */}
+          {/* Static Search Icon */}
           <div className="relative">
-            <button
-              aria-label="Search"
-              onClick={() => setSearchOpen((prev) => !prev)}
-            >
-              <Search className="h-5 w-5 text-white hover:text-blue" />
-            </button>
-            {searchOpen && (
-              <div className="dropdown absolute right-0 mt-2 w-64 shadow-md rounded-md p-2">
-                <form onSubmit={handleSearch}>
-                  <input
-                    type="text"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search pages..."
-                    className="w-full px-3 py-2 text-gray-700 border rounded-md focus:outline-none focus:ring-0"
-                    autoFocus
-                  />
-                </form>
-                {searchQuery &&
-                  !searchablePages.some((page) =>
-                    page.name.toLowerCase().includes(searchQuery.toLowerCase())
-                  ) && (
-                    <p className="text-blue mt-2">
-                      No match found for {searchQuery}
-                    </p>
-                  )}
-              </div>
-            )}
+            <Search className="h-5 w-5 text-white hover:text-[#3C72FC]" />
           </div>
 
           <span className="h-12 w-px bg-gray-300 mx-2" />
@@ -138,6 +91,10 @@ export default function Header() {
             <div className="pt-4 space-y-2 text-center">
               <SocialLinks className="justify-center" />
               <hr />
+              {/* Add Static Search Icon for Mobile */}
+              <div className="flex justify-center">
+                <Search className="h-5 w-5 text-white hover:text-[#3C72FC]" />
+              </div>
               <p className="text-white font-medium">
                 Need help?{" "}
                 <a
