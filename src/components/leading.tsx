@@ -69,7 +69,7 @@ export default function Leading() {
                 </p>
                 <a
                   href={`tel:${SUPPORT_PHONE}`}
-                  className="font-medium hover:underline text-[#0F0D1D]]"
+                  className="font-medium hover:underline text-[#0F0D1D]"
                   aria-label={`Call us at ${SUPPORT_PHONE}`}
                 >
                   {SUPPORT_PHONE}
