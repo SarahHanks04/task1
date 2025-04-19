@@ -44,7 +44,7 @@ export default function Header() {
           <SocialLinks />
           <span className="h-12 w-px bg-gray-300 mx-4" />
 
-          {/* Static Search Icon */}
+          {/* Search Icon */}
           <div className="relative">
             <Search className="h-5 w-5 text-white hover:text-[#3C72FC]" />
           </div>
@@ -80,7 +80,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <nav className="mobile-menu md:hidden bg-[#707070] text-white p-4">
+        <nav className="mobile-menu md:hidden bg-[#707070] uppercase text-white p-4">
           <div className="space-y-4">
             {navLinks.map((link) => (
               <NavItem
