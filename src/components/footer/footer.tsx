@@ -24,7 +24,7 @@ export default function Footer() {
     type: "success" | "error";
   } | null>(null);
 
-  const onSubmit = (data: NewsletterFormData) => {
+  const onSubmit = () => {
     setMessage({
       text: "Thank you for subscribing to our newsletter!",
       type: "success",
