@@ -1,12 +1,6 @@
 import { Testimonial } from "@/types/testimonial";
 
-interface TestimonialCardProps extends Testimonial {}
-
-export default function TestimonialCard({
-  comment,
-  name,
-  title,
-}: TestimonialCardProps) {
+export default function TestimonialCard({ comment, name, title }: Testimonial) {
   return (
     <div className="bg-white shadow-lg rounded-lg p-6 mx-4 flex flex-col justify-between h-[300px]">
       {/* Comment */}
