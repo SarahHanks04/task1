@@ -4,7 +4,7 @@ export const faqData: Faq[] = [
   {
     question: "The Head and Boost Your Business?",
     answer:
-      "We provide strategic insights and tailored solutions to enhance your business growth. Our team works closely with you to identify opportunities, streamline operations, and achieve sustainable success.",
+      "There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable.",
   },
   {
     question: "How Can Experts Work?",

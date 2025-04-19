@@ -1,6 +1,5 @@
-import BusinessStats from "@/components/businessStats";
+import BusinessStats from "@/components/businessStats/businessStats";
 import FAQSection from "@/components/faq/faqSection";
-import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Leading from "@/components/leading";
 import Mission from "@/components/mission";
@@ -11,7 +10,6 @@ import Testimonials from "@/components/testimonial/testimonial";
 export default function Home() {
   return (
     <div>
-      <Header />
       <Hero />
       <Experience />
       <Leading />

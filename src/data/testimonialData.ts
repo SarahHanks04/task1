@@ -3,25 +3,25 @@ import { Testimonial } from "@/types/testimonial";
 export const testimonialData: Testimonial[] = [
   {
     comment:
-      "Aivons Business Consulting transformed our strategy with expert insights. Their tailored solutions boosted our efficiency and growth, helping us achieve our goals faster. I highly recommend their professional team for any business looking to thrive.",
+      "Lorem ipsum is simply free text dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum is simply free text dolor sit amet,consectetur notted adipisicing elit sed do eiusmod tempor.",
     name: "Todd Higgins",
     title: "Customer",
   },
   {
     comment:
-      "Working with Aivons was a game-changer for us. Their strategic guidance and innovative approaches increased our revenue by 30%. The team’s dedication and expertise make them the best consulting partner we’ve ever had.",
+      "Lorem ipsum is simply free text dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum is simply free text dolor sit amet,consectetur notted adipisicing elit sed do eiusmod tempor.",
     name: "Todd Higgins",
     title: "Customer",
   },
   {
     comment:
-      "Aivons Business Consulting provided exceptional support in streamlining our operations. Their actionable advice and deep industry knowledge helped us scale efficiently. We’re now more competitive, thanks to their outstanding consulting services.",
+      "Lorem ipsum is simply free text dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum is simply free text dolor sit amet,consectetur notted adipisicing elit sed do eiusmod tempor.",
     name: "Todd Higgins",
     title: "Customer",
   },
   {
     comment:
-      "Aivons delivered beyond our expectations with their consulting expertise. They helped us navigate complex challenges, improving our processes and profitability. Their professional approach and insights are invaluable for any business aiming to succeed.",
+      "Lorem ipsum is simply free text dolor sit amet, consectetur notted adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum is simply free text dolor sit amet,consectetur notted adipisicing elit sed do eiusmod tempor.",
     name: "Todd Higgins",
     title: "Customer",
   },

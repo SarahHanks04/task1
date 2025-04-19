@@ -8,15 +8,17 @@ interface TabContentProps {
 }
 
 export default function TabContent({ activeTab }: TabContentProps) {
-  const content: TabContentData = tabContentData[activeTab] || {
+  
+  const tabKey = activeTab.split("_")[0]; 
+  const content: TabContentData = tabContentData[tabKey] || {
     features: [],
     additionalInfo: { description: "", listItems: [] },
   };
 
   return (
-    <div className="container bg-white w-full mx-auto px-4 pt-8 md:pt-[7rem] pb-6 md:pb-[4rem] flex flex-col md:flex-row gap-6">
+    <div className="container bg-white w-full mx-auto px-4 pt-8 md:pt-[7rem] pb-6 md:pb-[4rem] flex flex-col md:flex-row gap-6 pl-0 md:pl-50">
       {/* Features List */}
-      <div className="md:w-1/2 flex flex-col gap-4 pl-4 md:pl-[4rem]">
+      <div className="md:w-1/2 max-w-sm flex flex-col gap-4 pl-4 md:pl-[0rem]">
         {content.features.map((feature, index) => (
           <div key={index} className="flex items-start pt-6">
             <div className="flex items-center text-gray-700 p-4 md:p-4">
@@ -41,7 +43,7 @@ export default function TabContent({ activeTab }: TabContentProps) {
       <div className="w-full h-px md:w-px md:h-[255px] bg-gray-300 mx-4 my-4 md:my-0"></div>
 
       {/* Additional Information */}
-      <div className="md:w-1/2 flex flex-col gap-4 pt-8 pl-4 md:pl-6">
+      <div className="md:w-1/2 sm:w-full max-w-sm flex flex-col gap-4 pt-8 pl-4 md:pl-6">
         <p className="text-sm text-gray-600">
           {content.additionalInfo.description}
         </p>

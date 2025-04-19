@@ -32,7 +32,7 @@ export default function BusinessStats() {
                 />
               </div>
 
-              {/* Animated Number */}
+              {/* Number */}
               <div className="stat-number text-4xl font-bold mt-2">
                 {stat.number}
               </div>

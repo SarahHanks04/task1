@@ -40,16 +40,17 @@ export default function Leading() {
               We’re Leading in <br />
               the Market
             </h2>
-            <p className="text-base text-[#726F84]">
-              We provide top-notch solutions for your business needs, ensuring
-              growth through innovative strategies and expert guidance every
-              step of the way.
+            <p className="text-base text-[#726F84] pt-2">
+              Lorem ipsum is simply free text dolor sit amet, consectetur notted
+              adipisicing elit sed do eiusmod tempor incididunt ut labore et
+              doloremagna aliqua lonm andhn.We have 35+ years of experience. We
+              offer marketing and consulting services.
             </p>
-            <p className="text-lg font-semibold text-[#3C72FC]">
+            <p className="text-lg pt-3 font-semibold text-[#3C72FC]">
               We have 35+ years of experience. We offer marketing and consulting
               services.
             </p>
-            <div className="space-y-4">
+            <div className="space-y-4 pt-2.5">
               <ProgressBar label="Consulting" percentage={85} />
               <ProgressBar label="Advices" percentage={65} />
             </div>

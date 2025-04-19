@@ -37,7 +37,7 @@ export default function FAQSection() {
             </div>
           </div>
 
-          <div className="md:w-3/5 flex flex-col md:flex-row mt-0 md:mt-[20rem] gap-6">
+          <div className="md:w-3/5 flex flex-col md:flex-row mt-0 md:mt-[16rem] gap-6">
             {/* Info Points */}
             <div className="p-6">
               <ul className="space-y-4">

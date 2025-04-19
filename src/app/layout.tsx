@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Jost } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer/footer";
 
 const jost = Jost({
   variable: "--font-jost",
@@ -33,7 +35,9 @@ export default function RootLayout({
       <body
         className={`${jost.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
